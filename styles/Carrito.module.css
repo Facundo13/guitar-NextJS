@@ -6,6 +6,7 @@
 @media (min-width: 768px){
     .contenido{
         grid-template-columns: 3fr 2fr;
+        align-items: flex-start;
     }
 }
 
@@ -20,6 +21,7 @@
     align-items: center;
     border-bottom: 1px solid #cfcfcf;
     padding: 3rem;
+    position: relative;
 }
 
 .producto:last-of-type{
@@ -65,4 +67,46 @@
 .subtotal{
     font-weight: 700;
     font-size: 2.4rem;
+}
+
+.eliminar{
+    all: unset;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    font-weight: bold;
+
+}
+
+.eliminar:hover{
+    cursor:pointer;
+}
+
+.resumen{
+    background-color: #F9FAFB;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.enlace{
+    margin-top: 2rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 1.5rem 5.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.enlace:hover{
+    background-color: var(--primary);
+    color: var(--blanco);
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
 }
